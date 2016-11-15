@@ -3,6 +3,7 @@
     package="com.jiayou.fyg.myapplication">
 
     <application
+        android:name="com.jiayou.fyg.myapplication.com.jiayou.fyg.myapplication.mlink.AppContext"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -15,6 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.jiayou.fyg.myapplication.ExplainActivity"></activity>
+
+
     </application>
 
 </manifest>
