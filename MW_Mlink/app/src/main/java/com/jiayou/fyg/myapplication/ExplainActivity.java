@@ -4,6 +4,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.jiayou.fyg.myapplication.com.jiayou.fyg.myapplication.mlink.AppContext;
 
 public class ExplainActivity extends AppCompatActivity {
 
@@ -25,5 +28,13 @@ public class ExplainActivity extends AppCompatActivity {
         mtextView2.setError(desc);
 
 
+        showToast(desc);
+
+    }
+
+
+    public static void showToast(String content){
+
+        Toast.makeText(AppContext.getInstance(),content,Toast.LENGTH_SHORT).show();
     }
 }
