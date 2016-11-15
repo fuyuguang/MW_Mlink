@@ -8,6 +8,7 @@ import android.widget.TextView;
 public class ExplainActivity extends AppCompatActivity {
 
     private TextView mtextView;
+    private TextView mtextView2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +19,11 @@ public class ExplainActivity extends AppCompatActivity {
         String desc = getIntent().getExtras().getString("desc","eeor");
         mtextView = (TextView) findViewById(R.id.text_view);
         mtextView.setError(desc);
+
+
+        mtextView2 = (TextView) findViewById(R.id.text_view2);
+        mtextView2.setError(desc);
+
 
     }
 }
