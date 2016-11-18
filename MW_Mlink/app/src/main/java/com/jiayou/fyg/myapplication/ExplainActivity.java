@@ -68,4 +68,15 @@ public class ExplainActivity extends AppCompatActivity {
     }
     
     
+    /**
+    testMethod2
+    **/
+    public static void testMethod2(){
+        
+            System.out.println(" testMethod1 ");
+        
+    }
+    
+    
+    
 }
