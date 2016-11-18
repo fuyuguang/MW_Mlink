@@ -45,4 +45,15 @@ public class ExplainActivity extends AppCompatActivity {
     public static void showToastForce(String content){
         Toast.makeText(AppContext.getInstance(),content,Toast.LENGTH_SHORT).show();
     }
+    
+    
+    /**
+    new method 
+    **/
+    public static void showToastForce(String content,boolean flag ){
+        if(flag){
+            System.out.println(" showToastForce ");
+        }
+        Toast.makeText(AppContext.getInstance(),content,Toast.LENGTH_SHORT).show();
+    }
 }
