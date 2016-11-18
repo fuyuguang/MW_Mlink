@@ -40,4 +40,9 @@ public class ExplainActivity extends AppCompatActivity {
         //test add commit
         Toast.makeText(AppContext.getInstance(),content,Toast.LENGTH_SHORT).show();
     }
+    
+    
+    public static void showToastForce(String content){
+        Toast.makeText(AppContext.getInstance(),content,Toast.LENGTH_SHORT).show();
+    }
 }
