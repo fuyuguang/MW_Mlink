@@ -33,6 +33,10 @@ public class ExplainActivity extends AppCompatActivity {
     }
 
 
+    /**
+     * add annotate
+     * @param content
+     */
     public static void showToast(String content){
 
         Toast.makeText(AppContext.getInstance(),content,Toast.LENGTH_SHORT).show();
