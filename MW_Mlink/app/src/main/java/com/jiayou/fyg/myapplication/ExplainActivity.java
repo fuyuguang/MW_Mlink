@@ -37,6 +37,7 @@ public class ExplainActivity extends AppCompatActivity {
     public static void showToast(String content){
 
         //test add commit
+        //test add commit
         Toast.makeText(AppContext.getInstance(),content,Toast.LENGTH_SHORT).show();
     }
 }
