@@ -56,4 +56,16 @@ public class ExplainActivity extends AppCompatActivity {
         }
         Toast.makeText(AppContext.getInstance(),content,Toast.LENGTH_SHORT).show();
     }
+    
+    
+    /**
+    testMethod1
+    **/
+    public static void testMethod1(){
+        
+            System.out.println(" testMethod1 ");
+        
+    }
+    
+    
 }
