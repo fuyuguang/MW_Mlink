@@ -11,6 +11,7 @@ import com.jiayou.fyg.myapplication.com.jiayou.fyg.myapplication.mlink.AppContex
 
 public class ExplainActivity extends AppCompatActivity {
 
+    
     private TextView mtextView;
     private TextView mtextView2;
     private Button button;
