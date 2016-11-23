@@ -22,7 +22,11 @@ public class ExplainActivity extends AppCompatActivity {
 
 
         button = (Button) findViewById(R.id.button);
-
+        button.setOnClickListener(new View.OnClickListener(){
+            onClick(View v){
+            
+            }
+        });
         String desc = getIntent().getExtras().getString("desc","eeor");
         mtextView = (TextView) findViewById(R.id.text_view);
         mtextView.setError(desc);
