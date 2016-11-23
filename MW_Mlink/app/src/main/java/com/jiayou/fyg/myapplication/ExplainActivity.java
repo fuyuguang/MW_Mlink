@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -12,7 +13,7 @@ import com.jiayou.fyg.myapplication.com.jiayou.fyg.myapplication.mlink.AppContex
 public class ExplainActivity extends AppCompatActivity {
 
     private TextView mtextView;
-    private TextView mtextView2;
+    private EditText mtextView2;
     private Button button;
 
     @Override
@@ -25,7 +26,7 @@ public class ExplainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Toast.makeText(ExplainActivity.this,button.getText().toString(),Toast.LENGTH_SHORT).show();
+                Toast.makeText(ExplainActivity.this,mtextView2.getText().toString(),Toast.LENGTH_SHORT).show();
             }
         });
         String desc = getIntent().getExtras().getString("desc","eeor");
@@ -33,7 +34,7 @@ public class ExplainActivity extends AppCompatActivity {
         mtextView.setError(desc);
 
 
-        mtextView2 = (TextView) findViewById(R.id.text_view2);
+        mtextView2 = (EditText) findViewById(R.id.text_view2);
         mtextView2.setError(desc);
 
 
