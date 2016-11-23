@@ -61,13 +61,4 @@ public class LoggerUtil {
         }
     }
 
-
-    public void method1(String tag, String msg){
-
-        if (isDebug) {
-            Log.e(tag, " ------>> :" + msg);
-        }
-
-    }
-
 }
