@@ -3,6 +3,7 @@ package com.jiayou.fyg.myapplication;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -12,12 +13,15 @@ public class ExplainActivity extends AppCompatActivity {
 
     private TextView mtextView;
     private TextView mtextView2;
+    private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+        button = (Button) findViewById(R.id.button);
 
         String desc = getIntent().getExtras().getString("desc","eeor");
         mtextView = (TextView) findViewById(R.id.text_view);
@@ -88,7 +92,7 @@ public class ExplainActivity extends AppCompatActivity {
     }
     
     
-      /**
+    /**
     testMethod2
     **/
     public static void testMethod4(){
